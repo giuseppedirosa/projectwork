@@ -438,8 +438,9 @@
             <mail-session name="default" jndi-name="java:jboss/mail/Default">
                 <smtp-server outbound-socket-binding-ref="mail-smtp"/>
             </mail-session>
-            <mail-session name="mail-projectork" jndi-name="java:jboss/mail/projectwork" from="giancarlo.compagno@eng.it">
-                <smtp-server outbound-socket-binding-ref="projectwork-mail-smtp"/>
+            <mail-session name="Gmail" jndi-name="java:jboss/mail/projectwork" from="giancarlo.compa">
+                <smtp-server outbound-socket-binding-ref="projectwork-mail-smtp" ssl="true"
+                tls="true" username="engineeringgruppo5@gmail.com" password="ENGGruppo5"/>
             </mail-session>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:messaging-activemq:2.0">
